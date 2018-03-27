@@ -1,0 +1,22 @@
+extend layout
+block content
+  div
+    | Please enter connector details
+    div
+      form(id='add-historyscheduler' action='#{urlForm}' method='post')
+        label.input-form
+          |ID Device
+          input(type="text" name="historyscheduler_device_id" )
+        label.input-form
+          |History Scheduler Name
+          input(type="text" name="historyscheduler_name" )
+        label.input-form
+            |History Scheduler Description
+            textarea(name="historyscheduler_description" )
+        label.input-form
+            |History Scheduler Frequency (milliseconds)
+            input(type="text" name="historyscheduler_frequency" )
+        button(onclick='something()' class="button") Add History Scheduler
+block sidebar
+  .widget
+    p

@@ -1,0 +1,27 @@
+{
+  "production": {
+    "dbHost":"127.0.0.1",
+    "dbPort":"27017",
+    "dbName":"CMCPersistence",
+    "limit":50,
+    "skip":0,
+    "logfile":"/var/log/CMC-Persistence-Microservice.log",
+      "enableCors":true,
+    "authUrl":"http://localhost:3005",
+    "auth_token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJtb2RlIjoibXMiLCJpc3MiOiJub3QgdXNlZCBmbyBtcyIsImVtYWlsIjoibm90IHVzZWQgZm8gbXMiLCJ0eXBlIjoiY21jLWhpc3RvcnkiLCJlbmFibGVkIjp0cnVlLCJleHAiOjE4MzUxOTUyMTI3MzZ9.Bui058y--wby9TIsQCrxRCnRgDNk8k5-J-YaudjF6bI",
+    "app_token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJtb2RlIjoiZGV2ZWxvcGVyIiwiaXNzIjoiNWFhZmE5NDBmZGM4NzIyMTM3NmEwZmRkIiwiZW1haWwiOiJjbWNwZXJzaXN0ZW5jZUBjbWMuaXQiLCJ0eXBlIjoiRXh0ZXJuYWxXZWJVaSIsImVuYWJsZWQiOnRydWUsImV4cCI6MTc0MjU2ODExNjg3MH0.89TXgaFDqJmZ0IkltzQZMTy7mlmbRzId5saRTBLcg6s",
+    "decodedTokenFieldName": "mailerms",
+    "connectorDomainUrl" : "http://localhost:1880",
+    "devicesDomainUrl": "http://localhost:3014/api/v0.1/devices/",
+    "historyDevicesUrl": "http://localhost:3015/api/v0.1/histories/",
+    "templates": {
+      "template1": {
+        "subject":"test template",
+        "text":"template di prova {{body}}",
+        "html":"<h1>Template CMC Core</h1><p>{{body}}</p><p style='font:italic 9px;color:lightgrey;'>Esempio footer</p>",
+        "from":"your_from_email_address"
+      }
+    },
+    "restApiVersion": "0.1"
+  }
+}
