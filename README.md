@@ -21,6 +21,6 @@ It use CMC-Auth for application authentication. <br>
 
     npm start
 
-    The backoffice where you can add a new scheduler can be found at
-    <code>http://service_base_url/createhistoryscheduler</code><br><br>
-    To start or stop a process to save historical data of a device, go to <code>http://service_base_url/startstophistoryscheduler</code> page<br><br>
+The backoffice where you can add a new scheduler can be found at
+<code>http://service_base_url/createhistoryscheduler</code><br><br>
+To start or stop a process to save historical data of a device, go to <code>http://service_base_url/startstophistoryscheduler</code> page<br><br>

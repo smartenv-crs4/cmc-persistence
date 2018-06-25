@@ -8,7 +8,7 @@
     "logfile":"/var/log/CMC-Persistence-Microservice.log",
       "enableCors":true,
     "authUrl":"http://localhost:3005",
-    "auth_token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJtb2RlIjoibXMiLCJpc3MiOiJub3QgdXNlZCBmbyBtcyIsImVtYWlsIjoibm90IHVzZWQgZm8gbXMiLCJ0eXBlIjoiY21jLWhpc3RvcnkiLCJlbmFibGVkIjp0cnVlLCJleHAiOjE4MzUxOTUyMTI3MzZ9.Bui058y--wby9TIsQCrxRCnRgDNk8k5-J-YaudjF6bI",
+    "auth_token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJtb2RlIjoibXMiLCJpc3MiOiJub3QgdXNlZCBmbyBtcyIsImVtYWlsIjoibm90IHVzZWQgZm8gbXMiLCJ0eXBlIjoiY21jLXBlcnNpc3RlbmNlIiwiZW5hYmxlZCI6dHJ1ZSwiZXhwIjoxODQ0MDA1MDUwODc3fQ.tiIpLXuyODAXEVS0to5tUkKgWSbjVaMjmiE1AdtaKZU",
     "app_token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJtb2RlIjoiZGV2ZWxvcGVyIiwiaXNzIjoiNWFhZmE5NDBmZGM4NzIyMTM3NmEwZmRkIiwiZW1haWwiOiJjbWNwZXJzaXN0ZW5jZUBjbWMuaXQiLCJ0eXBlIjoiRXh0ZXJuYWxXZWJVaSIsImVuYWJsZWQiOnRydWUsImV4cCI6MTc0MjU2ODExNjg3MH0.89TXgaFDqJmZ0IkltzQZMTy7mlmbRzId5saRTBLcg6s",
     "decodedTokenFieldName": "mailerms",
     "connectorDomainUrl" : "http://localhost:1880",

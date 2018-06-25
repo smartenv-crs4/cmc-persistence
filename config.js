@@ -19,11 +19,11 @@
  *       along with CMC-Persist.  If not, see <http://www.gnu.org/licenses/>.    *
  * ############################################################################
  */
- 
+
 var config = require('./config/default.json');
 var async=require('async');
 var argv = require('minimist')(process.argv.slice(2));
-var version = require('package.json').version;
+var version = require('./package.json').version;
 console.dir(argv);
 
 var conf;
