@@ -52,7 +52,7 @@ exports.saveHistoryScheduler = function(req, res, next) {
 
       var body = [];
       //get url of connector
-      request.get(config.devicesDomainUrl + 'read/' + historySchedulerFound.idDevice).on('data', function(data) {
+      request.get(config.devicesDomainUrl + historySchedulerFound.idDevice + '/read').on('data', function(data) {
         body.push(data);
       }).on('end', function() {
         body = Buffer.concat(body).toString();
@@ -314,7 +314,7 @@ readFromDeviceForScheduling = function(idDevice) {
   }
   var body = [];
   //get url of connector
-  request.get(config.devicesDomainUrl + 'read/' + idDevice + '?access_token=' + config.app_token).on('data', function(data) {
+  request.get(config.devicesDomainUrl +  idDevice + '/read' + '?access_token=' + config.app_token).on('data', function(data) {
     body.push(data);
   }).on('end', function() {
     body = Buffer.concat(body).toString();
