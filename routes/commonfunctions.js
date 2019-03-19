@@ -248,6 +248,13 @@ exports.startOrStopHistory = function(req, res, next) {
         res.status(201).send(historySchedulerFound.toJSON());
       });
     }
+
+    if (historySchedulerFound && startOrStop == 'now') {
+      readFromDeviceForScheduling(historySchedulerFound.idDevice);
+    }
+    
+
+
   });
 }
 
@@ -268,7 +275,7 @@ saveHistory = function(idDevice, meta) {
     }
   }, function(error, response, body) {
     if (!error && response.statusCode == 200) {
-      console.log(body)
+      console.log(message);
     }
   });
 };
@@ -318,7 +325,7 @@ readFromDeviceForScheduling = function(idDevice) {
     body.push(data);
   }).on('end', function() {
     body = Buffer.concat(body).toString();
-    console.log(body);
+    
     try {
       var response = JSON.parse(body);
       var meta = [];
@@ -331,5 +338,5 @@ readFromDeviceForScheduling = function(idDevice) {
     }
   }).on('error', function(err) {
     console.error(err);
-  })
+  });
 }
